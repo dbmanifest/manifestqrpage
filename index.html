@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InvestManifest QR Scan Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+
+      #whitepaper-button {
+        background-color: #2196f3;
+      }
+
+      #whitepaper-button:hover {
+        background-color: #0d47a1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>InvestManifest QR Scan Landing Page</h1>
+      <p>Take a survey to get $5 off at our shop or see our site!</p>
+      <div class="buttons">
+        <button id="our-site-button">Our Site</button>
+        <button id="whitepaper-button">Get Our Whitepaper</button>
+        <button id="potential-investors-button">Take Brief Survey</button>
+      </div>
+    </div>
+
+    <script>
+      const ourSiteButton = document.getElementById("our-site-button");
+      const whitepaperButton = document.getElementById("whitepaper-button");
+      const potentialInvestorsButton = document.getElementById(
+        "potential-investors-button"
+      );
+      const potentialFoundersButton = document.getElementById(
+        "potential-founders-button"
+      );
+
+      ourSiteButton.addEventListener("click", () => {
+        window.location.href = "https://investmanifest.club";
+      });
+
+      whitepaperButton.addEventListener("click", () => {
+        window.location.href = "https://shop.investmanifest.club";
+      });
+
+      potentialInvestorsButton.addEventListener("click", () => {
+        window.location.href = "https://survey.investmanifest.club";
+      });
+
+    </script>
+  </body>
+</html>
